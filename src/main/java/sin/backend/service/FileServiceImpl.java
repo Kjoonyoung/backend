@@ -50,4 +50,8 @@ public class FileServiceImpl implements FileService {
         FileUp fileUp = fileRepository.findById(file_id).orElse(null);
         return fileUp;
     }
+    @Override
+    public void remove(long id){
+
+    }
 }

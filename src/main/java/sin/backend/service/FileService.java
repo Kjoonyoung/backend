@@ -13,5 +13,6 @@ public interface FileService {
     //2 파일 다운로드
     List<FileUp> getFileUpAll();
     FileUp getFileUp(long file_id);
-
+    //3 삭제
+    void remove(long id);
 }
