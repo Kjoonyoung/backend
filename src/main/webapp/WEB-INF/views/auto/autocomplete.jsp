@@ -26,7 +26,7 @@
 		        source : function( request, response ) {
 		             $.ajax({
 		                    type: 'post',
-		                    url: "autoData.json",
+		                    url: "autoData.do",
 		                    dataType: "json",
 		                    //request.term = $("#autocomplete").val()
 		                    data: { writer : $("#name").val()},

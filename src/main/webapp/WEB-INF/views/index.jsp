@@ -22,6 +22,6 @@
         <a href="ajax/test3.do">Ajax3</a>&nbsp;
         <a href="ajax/test4.do">Ajax4</a>(JSP)<br/>
 
-        <a href="auto/auto.do">Autocomplete</a>(JSP)<br/>
+        <a href="auto/auto.do">Autocomplete</a>
     </body>
 </html>
