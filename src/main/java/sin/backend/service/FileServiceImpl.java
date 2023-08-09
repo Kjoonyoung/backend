@@ -3,6 +3,7 @@ package sin.backend.service;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 import sin.backend.domain.FileUp;
 import sin.backend.repository.FileRepository;
@@ -50,8 +51,16 @@ public class FileServiceImpl implements FileService {
         FileUp fileUp = fileRepository.findById(file_id).orElse(null);
         return fileUp;
     }
+    //(3) 파일 삭제
+    @Transactional //중요 ! remove가 끝까지 일을 수행하지 못하면 롤백시켜버림
     @Override
     public void remove(long id){
-
+        FileUp fileUp = fileRepository.findById(id).orElse(null);
+        String savedpath = fileUp.getSavedpath();
+        File f = new File(savedpath);
+        if(f.exists()){
+           f.delete();
+        }
+        fileRepository.deleteById(id);
     }
 }

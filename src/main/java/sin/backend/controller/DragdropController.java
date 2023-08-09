@@ -67,6 +67,7 @@ public class DragdropController {
     @GetMapping("remove.do")
     public String remove(long id){
         System.out.println("@@DragdropController remove() id: "+id);
+        fileService.remove(id);
         //fileService. //삭제 추가
         return "redirect:list.do";
     }
