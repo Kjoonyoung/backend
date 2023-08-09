@@ -24,6 +24,8 @@
 
         <a href="auto/auto.do">Autocomplete</a><br/>
         <!--<a href="drag_drop/form_dd.do">Drag_Drop</a>-->
-        <a href="drag_drop/list.do">Drag_Drop</a>
+        <a href="drag_drop/list.do">Drag_Drop</a><br>
+
+        <a href="chart/chart.do">Google Chart</a>
     </body>
 </html>
