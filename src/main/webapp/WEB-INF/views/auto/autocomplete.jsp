@@ -22,7 +22,7 @@
 			
 					
 			//input 태그 id가 name
-		    $( "#name" ).autocomplete({
+		    $("#name").autocomplete({
 		        source : function( request, response ) {
 		             $.ajax({
 		                    type: 'post',
