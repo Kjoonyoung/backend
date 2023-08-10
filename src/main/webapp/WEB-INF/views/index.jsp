@@ -26,6 +26,7 @@
         <!--<a href="drag_drop/form_dd.do">Drag_Drop</a>-->
         <a href="drag_drop/list.do">Drag_Drop</a><br>
 
-        <a href="chart/chart.do">Google Chart</a>
+        <a href="chart/chart.do">Google Chart</a><br/>
+        <a href="rest_addr/read">REST<br/>
     </body>
 </html>
