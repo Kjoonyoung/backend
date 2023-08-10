@@ -28,5 +28,7 @@
 
         <a href="chart/chart.do">Google Chart</a><br/>
         <a href="rest_addr/read">REST<br/>
+
+        <a href="login/form.do">로그인<br/>
     </body>
 </html>
