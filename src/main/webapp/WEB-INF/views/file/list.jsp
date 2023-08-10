@@ -2,6 +2,10 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
+<%@ include file="../login/login_check_modul.jsp"%>
+<% session.setAttribute("forward_url", "file/list.do"); %>
+
+
 <!DOCTYPE html>
 <html>
 <head>

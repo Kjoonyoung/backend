@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
+@Table(name="MEMBER_LOGIN")
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
@@ -20,4 +21,3 @@ public class MemberLogin extends CommonEntity{
     private String pwd;
     private String phone;
 }
-

@@ -2,9 +2,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <meta charset="utf-8">
-
 <script src="/js/trim.js"></script>
-<script language="javascript"> 
+<script language="javascript">
     function check(){
 		var idval = f.email.value;
 		idval = trim(idval);
@@ -21,7 +20,7 @@
 				return false;
 			}
 		}
-		
+
 		var pwdval = f.pwd.value;
 		pwdval = trim(pwdval);
 		if(pwdval.length == 0){
@@ -52,7 +51,7 @@
 	function getByteLen(str){
 	   return str.replace(/[\0-\x7f]|([0-\u07ff]|(.))/g,"$&$1$2").length;
     }
-	
+
 	function enterCheck(elm){
 		if(event.keyCode == 13){
 			if(elm == f.email){
@@ -78,7 +77,7 @@
    <h1>
 		Login
    </h1>
-   <form name="f" action="login_ok/" method="post">
+   <form name="f" action="login.do" method="post">
        <table border="1" width="300" height="200">
 	      <tr>
 		     <td width="30%" colspan="2" align="center"><h2>입력폼</h2></td> 
