@@ -52,7 +52,4 @@ public class SpringConfig {
     public BoardService boardService() {
         return  new JdbcOracleBoardService(boardRepository());
     }
-
-
-
 }

@@ -15,7 +15,7 @@
         }else{
             location.href="../${sessionScope.forward_url}";
             <% session.removeAttribute("forward_url"); %>
-            alert("제거후: ${sessionScope.forward_url}");
+            //alert("제거후: ${sessionScope.forward_url}");
         }
     }
 </script>
